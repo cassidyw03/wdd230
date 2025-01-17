@@ -5,9 +5,9 @@
 }
 
 body {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: auto auto 1fr auto; */
     align-items: center;
     font-size: 18px;
@@ -18,8 +18,6 @@ body {
 header {
     font-family: "Send Flowers";
     background: lightpink;
-    grid-column: 1/3;
-    grid-row: 1/4;
     height: 500px;
     /* border-image: auto; */
     margin-bottom: 0;
@@ -33,19 +31,19 @@ header {
 }
 
 
-nav a:link, a:visited {
+
+.nav a:link, a:visited {
     font-family: var(--heading-font);
-    color: white;
+    color: lightpink;
 }
 
-list a:link, a:visited {
-    font: var(--heading-font);
+.list a:link {
     color: black
 }
 
-nav a:hover {
+/* nav a:hover {
     color: lightpink
-}
+} */
 
 nav {
     display: flex;
@@ -54,30 +52,29 @@ nav {
     height: 200px;
     background: #242424;
     margin-top: -100px;
+    padding: 1rem;
     border-style: groove;
     border-color:blanchedalmond;
 }
 
 main {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     height: 300px;
     width: 90% 90%;
     padding: 1rem;
-    grid-column: 1/3;
-    gap: 20px;
     font-family: "Send Flowers";
 }
 
 .card {
     font-family: Raleway;
+    /* grid-column: 1/3; */
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; */
 }
 
-/* .activites {
-    grid-column: 3/4;
-    grid-row: 1/2;
-} */
+
 
 
 ul {
@@ -86,7 +83,6 @@ ul {
 
 footer {
     background: lightpink;
-    grid-column: 1/3;
     height: fit-content;
     height: 400px;
 
