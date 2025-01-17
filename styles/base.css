@@ -38,6 +38,11 @@ nav a:link, a:visited {
     color: white;
 }
 
+list a:link, a:visited {
+    font: var(--heading-font);
+    color: black
+}
+
 nav a:hover {
     color: lightpink
 }
