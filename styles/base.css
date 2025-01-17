@@ -32,18 +32,18 @@ header {
 
 
 
-.nav a:link, a:visited {
+.nav a:link, .nav a:visited {
     font-family: var(--heading-font);
-    color: lightpink;
+    color: white;
 }
 
-.list a:link {
+.list a:link, .list a:visited {
     color: black
 }
 
-/* nav a:hover {
+.nav a:hover {
     color: lightpink
-} */
+}
 
 nav {
     display: flex;
