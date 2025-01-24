@@ -98,13 +98,15 @@ nav {
 main {
     height: 400px;
     width: 90% 90%;
-    /* padding: 1rem; */
+    padding: 4rem;
+    padding-top: 0%;
     font-family: "Send Flowers";
     /* added today */
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-style: groove;
     border: blanchedalmond;
+    justify-content: center;
 }
 
 .card {
