@@ -23,12 +23,37 @@ header {
 .profile-pic {
     border-radius: 100%;
     border: solid 6px blanchedalmond;
-    border-style: groove;
+    border-style: dashed;
     max-width: 150px;
 }
 
+nav {
+    max-width: auto;
+    margin-top: 1rem auto;
+}
 
+/* Hamburger List */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+    /* sets up position to the right */
+	position: absolute;
+	top: 25.35rem;
+	right: 1rem;
+}
 
+#menu::before {
+	content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+	content: "🎨";
+    /* color hex is #FFB6C1 */
+} 
+
+/* Navigation Styling */
 .nav a:link, .nav a:visited {
     font-family: var(--heading-font);
     color: white;
@@ -42,17 +67,32 @@ header {
     color: lightpink
 }
 
-nav {
+.navigation {
     display: flex;
     flex-direction: column;
     text-align:center;
+    /* added */
+    justify-content: space-around;
+    list-style: none;
+    /* added */
     font-size: 25px;
-    height: 200px;
+    /* changed height to auto for hamburger menu */
+    height: auto;
     background: #242424;
-    margin-top: -100px;
+    margin-top: -30px;
     padding: 1rem;
     border-style: groove;
     border-color:blanchedalmond;
+}
+
+.navigation a {
+    display: none;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+
 }
 
 main {
@@ -66,8 +106,6 @@ main {
     border-style: groove;
     border: blanchedalmond;
 }
-
-
 
 .card {
     font-family: "Raleway";
@@ -89,9 +127,35 @@ ul {
     list-style-type: none;
 }
 
+#map iframe {
+    width: 100%;
+    height: auto;
+    border: solid 6px #242424;
+
+}
+
 footer {
     background: lightpink;
     height: 100px;
     padding: 1rem;
 }
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: column;
+        height: 200px;
+	}
+
+	.navigation a {
+		display: flex;
+        flex-direction: column;
+	}
+}
+
 

@@ -21,14 +21,17 @@
         <img class="profile-pic" src="/wdd230/images/IMG_7714.jpg" alt="Profile Picture" width="200">
         <h1>Cassidy I. Whitehead Mangum</h1>
     </header>
+    <button type="button" id="menu"></button>
     <nav class="nav">
-        <!-- ul list perhaps -->
-        <a href="#">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng">Scripture</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng">Scripture</a></li>
+        </ul>
     </nav>
+    
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -50,7 +53,13 @@
         <section class="card">
             <h3>Information</h3>
         </section>
+        
     </main>
+
+    <div id="map">
+        <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97116.7786162932!2d-104.9165265!3d40.477492049999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a4edda7beb1%3A0x5b26a9575eb774c!2sWindsor%2C%20CO!5e0!3m2!1sen!2sus!4v1737687082005!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <footer>
         <p>
             Cassidy Whitehead Mangum | United States of America ♥
@@ -60,5 +69,6 @@
     </footer>
 
     <script src="/wdd230/scripts/getdates.js"></script>
+    <script src="/wdd230/scripts/hamburger.js"></script>
 </body>
 </html>
