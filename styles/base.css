@@ -60,21 +60,19 @@ nav {
 }
 
 .list a:link, .list a:visited {
-    color: black
+    color: black;
 }
 
 .nav a:hover {
-    color: lightpink
+    color: lightpink;
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     text-align:center;
-    /* added */
     justify-content: space-around;
     list-style: none;
-    /* added */
     font-size: 25px;
     /* changed height to auto for hamburger menu */
     height: auto;
