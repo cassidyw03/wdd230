@@ -45,6 +45,7 @@ body {
 
 .nav a:hover {
     color: #ff6600;
+    /* #ff6600 */
     border-radius: 5px;
     background-color: white;
     padding: 2px;
@@ -54,11 +55,9 @@ body {
     background-color: #36475D;
     /* background-color: #54575c; */
     /* background-color: #4C90FF; */
-    padding-right: 125px;
     padding-top: 90px;
     padding-bottom: 45px;
-    /* padding: 100px; */
-    padding-left: 150px;
+
     transition: padding 1s ease, background 3s ease;
     
 }
@@ -67,9 +66,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: right;
+    text-align: center;
     list-style: none;
-    font-size: 40px;
+    font-size: 30px;
     background: #ff6600;
     color: white;
     /* padding: 1.5rem; */
@@ -145,11 +144,47 @@ body {
 
 .btn:hover {
     background: #cc5500;
+    box-shadow: 0px 0px 300px white;
+    transition: box-shadow 1s ease;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 100px;
+}
+
+#events {
+    grid-column: 1/2;
+    border: 2px black;
+    padding: 10px;
+}
+
+#weather {
+    grid-column: 2/3;
+}
+
+#weather p {
+    padding: 10px;
+}
+
+#spotlights {
+    grid-column: 3/4;
 }
 
 h2 {
     font-family: "Raleway";
+    padding: 40px;
 }
+
+h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+
 
 footer {
     color: white;
