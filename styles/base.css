@@ -148,8 +148,8 @@ footer {
 	}
 
 	.navigation {
-		flex-direction: column;
-        height: 200px;
+		flex-direction: row;
+        height: 30px;
 	}
 
 	.navigation a {
