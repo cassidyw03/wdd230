@@ -10,6 +10,31 @@ body {
     font-family: "EB Garamond", sans-serif;
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+#mode:hover {
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+
+.dark-mode {
+	background-color: #000;
+	color: #fff;
+	border-color: #eee; 
+}
+
+.dark-mode .hero::before {
+    /* Make hero even darker */
+    background: rgba(0, 0, 0, 0.8);
+}
+
 .nav {
     max-width: auto;
     margin-top: 1rem auto;
