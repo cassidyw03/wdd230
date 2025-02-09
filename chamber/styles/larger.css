@@ -19,4 +19,29 @@
         padding: 20px;
         
     }
+
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		padding: 20px;
+		/* padding: 100px; */
+	}
+
+	#events {
+		grid-column: 1/2;
+		padding: 10px;
+	}
+
+	#weather {
+		grid-column: 2/3;
+	} 
+
+	#weather p {
+		padding: 10px;
+	} 
+
+	#spotlights {
+		grid-column: 3/4;
+	}
 }

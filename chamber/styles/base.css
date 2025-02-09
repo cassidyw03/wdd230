@@ -17,6 +17,7 @@ body {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 1.5rem;
+    padding: 0.2rem;
 }
 
 #mode:hover {
@@ -25,14 +26,22 @@ body {
 }
 
 .dark-mode {
-	background-color: #000;
+	background-color: black;
 	color: #fff;
 	border-color: #eee; 
 }
 
 .dark-mode .hero::before {
     /* Make hero even darker */
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .navigation {
+    background-color: #36475D;
+}
+
+.dark-mode footer {
+    background-color: #36475D;
 }
 
 .nav {
@@ -82,9 +91,7 @@ body {
     /* background-color: #4C90FF; */
     padding-top: 90px;
     padding-bottom: 45px;
-
     transition: padding 1s ease, background 3s ease;
-    
 }
 
 .navigation {
@@ -136,7 +143,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    /* transition for dark mode */
+    transition: background 1s ease;
 }
 
 .hero-content {
@@ -176,19 +185,27 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px;
+    grid-gap: 20px;
+    color: white;
+}
+
+main section {
+    background-color: #36475D;
+    padding: 50px;
+    border-radius: 2%;
 }
 
 #events {
-    grid-column: 1/2;
+    grid-row: 1/2;
     border: 2px black;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #weather {
-    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 #weather p {
@@ -196,20 +213,20 @@ main {
 }
 
 #spotlights {
-    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 h2 {
     font-family: "Raleway";
-    padding: 40px;
-}
-
-h3 {
-    padding: 10px;
+    padding: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 
-
+h3 {
+    padding: 30px;
+    text-align: center;
+}
 
 footer {
     color: white;
