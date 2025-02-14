@@ -99,12 +99,38 @@ nav {
 
 }
 
+.hero {
+    position: relative;
+    margin-top: -30px;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.temple-label {
+    position: absolute;
+    top: 17%;
+    left: 26%;
+    transform: translateX(-50%);
+    background: rgb(255, 182, 193);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-radius: 5px;
+  }
+
+
 main {
     height: 500px;
     width: 90% 90%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
+    padding-top: 20px;
     font-family: "Send Flowers";
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -156,7 +182,6 @@ ul {
     width: 100%;
     height: auto;
     border: 6px solid #242424;
-
 }
 
 footer {
@@ -204,6 +229,10 @@ footer {
     
     .info {
         grid-column: 2/3;
+        }
+
+    .temple-label {
+        font-size: 1.6rem;
         }
 
 
