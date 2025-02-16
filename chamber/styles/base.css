@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+link[rel="icon"] {
+    display: block;
+  }
+  
+
 body {
     font-family: "EB Garamond", sans-serif;
 }
