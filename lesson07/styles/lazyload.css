@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin: auto;
+    padding-top: 50px;
+    width: 600px;
+    text-decoration:overline;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 100px;
+}
+
+footer {
+    background-color: rgb(143, 143, 181);
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    background: black;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
