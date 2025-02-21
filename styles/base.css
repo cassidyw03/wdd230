@@ -129,7 +129,7 @@ main {
     width: 90% 90%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
     padding-top: 20px;
     font-family: "Send Flowers";
     display: grid;
@@ -217,6 +217,7 @@ footer {
         height: 300px;
         padding-left: 100px;
         padding-right: 100px;
+        padding-bottom: 70px;
     }
 
     h2 {
