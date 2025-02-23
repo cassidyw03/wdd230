@@ -240,3 +240,34 @@ footer {
     padding: 25px;
     line-height: 40px;
 }
+
+/* Discover Page Styles */
+
+.side-container {
+    height: 80vh;
+    transition: 1s ease;
+}
+
+.sidebar {
+    background-color: #36475D;
+    color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.content img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    /* this centering isn't working? */
+    justify-self: center;
+}
