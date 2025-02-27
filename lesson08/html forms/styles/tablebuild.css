@@ -1,0 +1,28 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+th, td {
+    padding: 10px 21px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightblue;
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    border: hsla(0, 0%, 20%, 0.8);
+    border: thin solid hsla(0, 0%, 20%, 0.8);
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: hsl(0, 100%, 91%);
+}
