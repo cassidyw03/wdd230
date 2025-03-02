@@ -188,7 +188,9 @@ body {
     background: rgba(0, 0, 0, 0.4);
 }
 
-main {
+/* Fix Main grid here */
+
+/* main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -201,7 +203,7 @@ main section {
     background-color: #36475D;
     padding: 50px;
     border-radius: 2%;
-}
+} */
 
 #events {
     grid-row: 1/2;
@@ -271,3 +273,145 @@ footer {
     /* this centering isn't working? */
     justify-self: center;
 }
+
+/* Form Styling */
+.myform {
+    color: black;
+}
+
+.myform fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.myform legend {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 8px;
+    background-color:#36475D;
+}
+
+.myform label {
+    display: block;
+    padding-top: 2rem;
+    font-size: .9rem;
+    text-align: left;
+}
+
+.myform input[type="text"],
+.myform input[type="tel"],
+.myform input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.myform div {
+    padding-top: 3rem;
+    font-weight: bold;
+}
+
+.myform input[type="radio"] {
+    /* display: flex; */
+    margin-right: 6px;
+    padding: .75rem;
+}
+
+textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    appearance: none;
+}
+
+.myform button[type="submit"] 
+{
+    border: none;
+    background-color: #36475D;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 5rem 2% 2rem 2%;
+    box-shadow: 1px 1px 7px #999;
+}
+
+.myform button:hover
+{
+    background-color: #263344;
+}
+
+.myform input:required {
+    border-right: solid 8px red;
+}
+
+.myform input:required:valid {
+    border-right: solid 8px green;
+}
+
+/* thankyou.html Styling */
+
+main .done {
+    text-align: center;
+    color: black;
+    font-size: larger;
+}
+
+p {
+    padding: 20px;
+}
+
+.thanks {
+    background-color: #ff6600;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+/* Side content helpful styling */
+/* Style for main content */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns */
+    gap: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    grid-column: 1 / 2; 
+    
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: #ff6600;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 50px;
+}
+
+.sidebar li {
+    padding: 20px 10px;
+}
+
+

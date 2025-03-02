@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 Frontend Development Cassidy Whitehead Windsor Chamber of Commerce">
+    <meta name="author" content="Cassidy Whitehead">
+    <meta property="og:title" content="Cassidy Whitehead - WDD 230 - Web Frontend Development"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/loveland-pass-rick-webb.jpg"/>
+    <meta property="og:url" content="https://cassidyw03.github.io/wdd230/"/>
+    <link rel="stylesheet" href="/wdd230/styles/noralize.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
+    <link rel="icon" type="image/png" href="./images/Windsor Chamber.png">
+
+
+    <title>Cassidy Whitehead - WDD230 - Windsor Chamber of Commerce</title>
+</head>
+<body>
+      <div id="mode">
+        ◪
+
+      </div>
+
+    <button type="button" id="menu"></button>
+    <nav class="nav">
+        <ul class="navigation">
+            <li><a href="/wdd230/chamber/">Home</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Join</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Windsor Chamber of Commerce</h1>
+            <a href="./discover.html" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="content-container">
+        <form method="get" action="thankyou.html" class="myform">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position*<input type="text" name="position" id="position" pattern="[A-Za-z\s-]{7,}" title="Must be at least 7 characters long and only contain letters, hyphens, and spaces" required></label>
+                <label>Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone*<input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label>Business / Organization's Name*<input type="text" name="oname" id="oname" required></label>
+                <div class="memDiv">Membership Level</div>
+                <label><input type="radio" name="mem" value="NP Membership (For non profit organizations. There will be no fee.)">NP Membership (For non profit organizations. No fee.)</label>
+                <label><input type="radio" name="mem" value="Bronze Membership">Bronze Membership</label>
+                <label><input type="radio" name="mem" value="Silver Membership">Silver Membership</label>
+                <label><input type="radio" name="mem" value="Gold Membership">Gold Membership</label>
+                <label>Business / Organization's Description</label>
+                <textarea name="area" id="area" rows="4" cols="50"></textarea>
+                <input type="hidden" name="submissionTime" id="submissionTime">
+            </fieldset>
+                <button id="submit" type="submit">Send My Application!</button>
+        </form>
+
+        <aside class="sidebar">
+
+            <div class="benefit-level">
+                <h3>NP Membership</h3>
+                <ul>
+                    <li><strong>Free for non-profit organizations:</strong> No membership fee required.</li>
+                    <li>✔ Access to select events and workshops.</li>
+                    <li>✔ Receive our monthly newsletter for the latest updates.</li>
+                    <li>✔ Listing in the online directory.</li>
+                    <li>✔ Community support from other members.</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-level">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li><strong>Basic benefits:</strong> Includes access to essential member resources and events.</li>
+                    <li>✔ Monthly newsletter with upcoming events and news.</li>
+                    <li>✔ Invitations to regular community events and gatherings.</li>
+                    <li>✔ Basic advertising in our online directory.</li>
+                    <li>✔ Opportunity to participate in networking sessions.</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-level">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li><strong>Bronze benefits:</strong> Includes all the benefits from the Bronze membership.</li>
+                    <li>✔ Discounted tickets for events and workshops.</li>
+                    <li>✔ Priority registration for events to ensure your spot.</li>
+                    <li>✔ Featured advertising space on our website.</li>
+                    <li>✔ Access to additional educational resources and training materials.</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-level">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li><strong>All Silver benefits:</strong> Includes all benefits from the Silver level.</li>
+                    <li>✔ Premium event spots for exclusive access to top-tier workshops and networking opportunities.</li>
+                    <li>✔ VIP training sessions tailored to help advance your business.</li>
+                    <li>✔ Special promotional opportunities on our homepage for maximum visibility.</li>
+                    <li>✔ Personalized business consulting and mentorship from industry experts.</li>
+                    <li>✔ Guaranteed priority placement in our event lineups.</li>
+                </ul>
+            </div>
+
+            <!-- <h2>Membership Benefits</h2>
+            <ul>
+                <li><strong>NP Membership:</strong> Free for non-profit organizations</li>
+                <li><strong>Bronze Membership:</strong> Basic benefits, including newsletter and event access</li>
+                <li><strong>Silver Membership:</strong> Bronze benefits plus discounted event tickets and advertising</li>
+                <li><strong>Gold Membership:</strong> All Silver benefits plus premium event spots and VIP training</li>
+            </ul> -->
+        </aside>
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <p>
+            Contact Us: (208) 496-1411    
+        </p>
+        <p>
+            Cassidy I.W. Mangum
+        </p>
+        <p>
+            This is ficticious site for a project in WDD 230 at BYU-Idaho
+        </p>
+        <p>&copy; <span id="year"></span></p> 
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script src="/wdd230/chamber/scripts/dates.js"></script>
+    <script src="/wdd230/chamber/scripts/hamburger.js"></script>
+    <script src="/wdd230/chamber/scripts/mode.js"></script>
+    <script src="/wdd230/chamber/scripts/windchill.js"></script>
+    <script src="/wdd230/chamber/scripts/join.js"></script>
+</body>
+</html>

@@ -106,4 +106,21 @@
 	.f {
 		grid-row: 6/7;
 	}
+
+	main .done {
+        width: 100%; 
+        text-align: center;
+		grid-column: 2/3;
+	}
+
+	.content-container {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .sidebar {
+		grid-column: 2/3;
+		/* justify-self: end; */
+		margin-top: 20px; /* Adds some space between form and sidebar */
+   		justify-self: stretch; /* Makes sidebar stretch to fill container width */
+	}
 }
