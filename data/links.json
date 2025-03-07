@@ -90,6 +90,10 @@
                 {
                     "url": "lesson09/new-ward-members.json",
                     "title": "JSON Learning"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets JSON"
                 }
             ]
         }

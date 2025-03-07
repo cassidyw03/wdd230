@@ -214,7 +214,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 900px;
+        height: 1000px;
         padding-left: 100px;
         padding-right: 100px;
         padding-bottom: 70px;
