@@ -5,7 +5,7 @@
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
-                    "title": "Lesson 01"
+                    "title": "Holy Grail"
                 }
             ]
         },
@@ -14,7 +14,7 @@
             "links": [
                 {
                     "url": "lesson02/design.html",
-                    "title": "Lesson 02"
+                    "title": "Design"
                 },
                 {
                     "url": "/wdd230/lesson02/design-principles.html",
