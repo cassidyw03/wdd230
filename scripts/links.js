@@ -12,6 +12,7 @@ getLinks();
 
 function displayLinks(weeks) {
     const container = document.querySelector('#card');
+
     weeks.forEach(week => {
         let card = document.createElement('section');
         let lesson = document.createElement('h3');
@@ -19,7 +20,7 @@ function displayLinks(weeks) {
 
         card.appendChild(lesson);
 
-        week.linkforeach(linkObj => {
+        week.link.foreach(linkObj => {
             let link = document.createElement('a');
             link.href = linkObj.url.startsWith("http") ? linkObj.url : baseURL + linkObj.url; // Handle absolute and relative URLs
             link.textContent = linkObj.title;
