@@ -20,7 +20,7 @@ function displayLinks(weeks) {
 
         card.appendChild(lesson);
 
-        week.link.foreach(linkObj => {
+        week.links.forEach(linkObj => {
             let link = document.createElement('a');
             link.href = linkObj.url.startsWith("http") ? linkObj.url : baseURL + linkObj.url; // Handle absolute and relative URLs
             link.textContent = linkObj.title;
