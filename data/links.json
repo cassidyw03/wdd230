@@ -4,7 +4,7 @@
             "lesson": "01",
             "links": [
                 {
-                    "url": "/wdd230/lesson01/holygrail.html",
+                    "url": "lesson01/holygrail.html",
                     "title": "Lesson 01"
                 }
             ]
@@ -13,7 +13,7 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "/wdd230/lesson02/design.html",
+                    "url": "lesson02/design.html",
                     "title": "Lesson 02"
                 },
                 {
@@ -52,7 +52,7 @@
             "lesson": "05",
             "links": [
                 {
-                    "url": "/wdd230/lesson05/bom.html",
+                    "url": "lesson05/bom.html",
                     "title": "Favorite BOM Chapter"
                 }
             ]
@@ -61,7 +61,7 @@
             "lesson": "06",
             "links": [
                 {
-                    "url": "/wdd230/lesson06/images/landscape.webp",
+                    "url": "lesson06/images/landscape.webp",
                     "title": "WebP"
                 }
             ]
@@ -70,7 +70,7 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "/wdd230/lesson07/lazyload.html",
+                    "url": "lesson07/lazyload.html",
                     "title": "Lazy Loading"
                 }
             ]
@@ -79,7 +79,7 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "/wdd230/lesson08/tablebuild.html",
+                    "url": "lesson08/tablebuild.html",
                     "title": "Tables for Data Presentation"
                 }
             ]
@@ -88,7 +88,7 @@
             "lesson": "09",
             "links": [
                 {
-                    "url": "/lesson09/new-ward-members.json",
+                    "url": "lesson09/new-ward-members.json",
                     "title": "JSON Learning"
                 }
             ]

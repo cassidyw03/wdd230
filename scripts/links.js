@@ -22,11 +22,22 @@ function displayLinks(weeks) {
 
         week.links.forEach(linkObj => {
             let link = document.createElement('a');
-            link.href = linkObj.url.startsWith("http") ? linkObj.url : baseURL + linkObj.url; // Handle absolute and relative URLs
+            // we need to handle the base URLs and the links
+            if (linkObj.url.startsWith("http")) {
+                link.href = linkObj.url; // Absolute URL (external links)
+            } else {
+                link.href = baseURL + linkObj.url; // Relative URL (lesson01, lesson02, etc.)
+            }
+
             link.textContent = linkObj.title;
-            link.target = "_blank"; // Open in a new tab
+            link.target = "_blank"; // Open link in a new tab
             card.appendChild(link);
-            card.appendChild(document.createElement("br"));
+            card.appendChild(document.createElement("br")); // Line break between links
+
+
+
+            // link.href = linkObj.url.startsWith("http") ? linkObj.url : baseURL + linkObj.url;
+    
         });
 
         container.appendChild(card);
