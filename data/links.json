@@ -1,0 +1,98 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "/wdd230/lesson01/holygrail.html",
+                    "title": "Lesson 01"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "/wdd230/lesson02/design.html",
+                    "title": "Lesson 02"
+                },
+                {
+                    "url": "/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "/wdd230/images/combinators.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/cassidyw03/pen/JoPmpBK",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/cassidyw03/pen/vEBVROd",
+                    "title": "Responsive 'Hamburger' Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/cassidyw03/pen/YPKBpWo",
+                    "title": "CSS Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "/wdd230/lesson05/bom.html",
+                    "title": "Favorite BOM Chapter"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "/wdd230/lesson06/images/landscape.webp",
+                    "title": "WebP"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "/wdd230/lesson07/lazyload.html",
+                    "title": "Lazy Loading"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "/wdd230/lesson08/tablebuild.html",
+                    "title": "Tables for Data Presentation"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "/lesson09/new-ward-members.json",
+                    "title": "JSON Learning"
+                }
+            ]
+        }
+    ]
+}
+
