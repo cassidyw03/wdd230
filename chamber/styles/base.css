@@ -414,4 +414,114 @@ p {
     padding: 20px 10px;
 }
 
+/* directory.html Styling */
+.directory-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.toggle-button-menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color:#555;
+	text-align: center;
+}
+
+.toggle-button-menu button {
+	padding: 1rem;
+	font-weight: 700;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button-menu button:hover {
+    background-color: #444;
+}
+
+.directory-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* Auto columns with a minimum width of 300px */
+    gap: 20px;
+}
+
+.grid-view .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.grid-view .card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* column for  */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-view .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.list-view .card img {
+    max-width: 100px; /* Limit image size */
+    margin-right: 15px;
+    display: block;
+}
+
+.list-view .card h2 {
+    flex: 1;
+}
+
+/* Ensure cards inside list-view take up full width */
+.list-view .card p {
+    margin-left: 15px;
+}
+
+
+
+
+
 
