@@ -149,6 +149,12 @@ main {
     border-radius: 25px;
 }
 
+.weather-card {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 h2 {
     /* no longer in grid */
     font-family: "Send Flowers";
@@ -166,7 +172,7 @@ h3 {
     text-align: center;
 }
 
- .activities {
+.activities {
     grid-row: 2/3;
     }
 
