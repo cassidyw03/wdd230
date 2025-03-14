@@ -8,17 +8,23 @@ function calculateWindChill(temp, windSpeed) {
         let windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16));
         return windChill.toFixed(1) + "°F"; // Round to one decimal place
     } else {
-        return "N/A"; // If conditions are not met
+        return "N/A"; 
     }
 }
 
 // function that will update windchill on the page
 function updateWindChill() {
+
+    if (windSpeed > 0) {
     let temp = parseFloat(document.getElementById("temperature").textContent);
     let windSpeed = parseFloat(document.getElementById("windSpeed").textContent);
     let windChillValue = calculateWindChill(temp, windSpeed);
     
     document.getElementById("windChill").textContent = windChillValue;
+    }
+    else {
+        return "0";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", updateWindChill);

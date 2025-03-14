@@ -190,20 +190,22 @@ body {
 
 /* Fix Main grid here */
 
-/* main {
+ main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 50px;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
     grid-gap: 20px;
-    color: white;
+    /* color: white; */
 }
 
 main section {
     background-color: #36475D;
+    color: white;
     padding: 50px;
-    border-radius: 2%;
-} */
+    padding: 20px;
+    border-radius: 8px;
+} 
 
 #events {
     grid-row: 1/2;
@@ -520,8 +522,43 @@ p {
     margin-left: 15px;
 }
 
+/* Main page banner styling */
+#event-banner {
+    display: none;
+    background-color: #f8f9fa;
+    border-left: 8px solid #007bff;
+    padding: 12px 20px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 0 8px 8px 0;
+}
 
+#event-banner h3 {
+    margin: 0 0 8px 0;
+    font-size: 30px;
+    font-family: "Raleway";
+}
 
+#event-banner p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Close button styling */
+.close-banner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color:#36475D;
+    transition: color 0.2s;
+}
+
+.close-banner:hover {
+    color:black;
+}
 
 
 

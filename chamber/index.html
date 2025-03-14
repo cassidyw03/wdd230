@@ -9,9 +9,8 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/loveland-pass-rick-webb.jpg"/>
     <meta property="og:url" content="https://cassidyw03.github.io/wdd230/"/>
-    <link rel="stylesheet" href="/wdd230/styles/noralize.css">
-    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
-    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" type="image/png" href="./images/Windsor Chamber.png">
 
 
@@ -33,6 +32,12 @@
 
         </ul>
     </nav>
+
+    <div id="event-banner">
+        <span class="close-banner" id="close-banner">✕</span>
+        <h3>Chamber of Commerce Meet & Greet</h3>
+        <p>Join us this <strong>Wednesday at 7:00 PM</strong> for networking opportunities and refreshments! All welcome.</p>
+    </div>
 
     <!-- Hero -->
     <section class="hero">
@@ -56,9 +61,17 @@
         <section id="weather">
             <!-- Weather Card section -->
              <h2>Weather</h2>
-             <p>Temperature: <span id="temperature">35</span>℉</p>
-             <p>Wind Speed: <span id="windSpeed">10</span>mph</p>
+             <p>Temperature: <span id="temperature"></span></p>
+             <figure>
+                <img id="weather-icon" src="weather-icon" alt="Weather Icon">
+                <figcaption id=""></figcaption>
+            </figure>
+             <p>Wind Speed: <span id="windSpeed"></span>mph</p>
              <p>Wind Chill: Feels like <span id="windChill">N/A</span></p>
+
+
+             <h2>3 Day Forcast</h2>
+             <div id="forecast"></div>
         </section>
 
         <section id="spotlights">
@@ -84,10 +97,12 @@
         <p><span id="lastModified"></span></p>
     </footer>
 
-    <script src="/wdd230/chamber/scripts/dates.js"></script>
-    <script src="/wdd230/chamber/scripts/hamburger.js"></script>
-    <script src="/wdd230/chamber/scripts/mode.js"></script>
-    <script src="/wdd230/chamber/scripts/windchill.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wweather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
 
