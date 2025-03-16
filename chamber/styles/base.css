@@ -49,10 +49,11 @@ body {
     background-color: #36475D;
 }
 
+/* 
 .nav {
-    max-width: auto;
-    margin-top: 1rem auto;
-}
+    /* max-width: auto; */
+    /* margin-top: 1rem auto; */
+
 
 /* Hamburger List */
 #menu {
