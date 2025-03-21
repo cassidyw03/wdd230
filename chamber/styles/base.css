@@ -253,7 +253,7 @@ footer {
     transition: 1s ease;
 }
 
-.sidebar {
+.sidebar1 {
     background-color: #36475D;
     color: white;
     width: 500px;
@@ -293,6 +293,7 @@ footer {
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 8px;
     background-color:#36475D;
+    color: white;
 }
 
 .myform label {
@@ -323,7 +324,6 @@ footer {
 }
 
 .myform input[type="radio"] {
-    /* display: flex; */
     margin-right: 6px;
     padding: .75rem;
 }
@@ -383,17 +383,9 @@ p {
     justify-self: center;
 }
 
-/* Side content helpful styling */
-/* Style for main content */
-.content-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Two columns */
-    gap: 20px;
-}
-
-/* Sidebar styling */
-.sidebar {
-    background-color: #f4f4f4;
+/* Sidebar styling for form */
+.sidebar2 {
+    background-color: #959595;
     color: black;
     padding: 20px;
     border-radius: 8px;
@@ -403,17 +395,18 @@ p {
     
 }
 
-.sidebar h2 {
+.sidebar2 h3 {
     font-size: 1.5rem;
     color: #ff6600;
 }
 
-.sidebar ul {
+.sidebar2 ul {
     list-style-type: none;
     padding: 50px;
+
 }
 
-.sidebar li {
+.sidebar2 li {
     padding: 20px 10px;
 }
 

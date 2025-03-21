@@ -116,14 +116,18 @@
 	}
 
 	.content-container {
-		/* display: grid; */
-        grid-template-columns: 1fr 1fr; 
+		display: grid;
+        grid-template-columns: 1fr 2fr; 
+		gap: 20px;
     }
 
-    .sidebar {
+	.content-container form {
+		grid-column: 1/2;
+	}
+
+    .sidebar2 {
 		grid-column: 2/3;
-		/* justify-self: end; */
-		margin-top: 20px; /* Adds some space between form and sidebar */
-   		justify-self: stretch; /* Makes sidebar stretch to fill container width */
+		margin-top: 20px;
+   		justify-self: stretch; 
 	}
 }

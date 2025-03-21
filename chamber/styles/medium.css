@@ -46,7 +46,7 @@
 		grid-column: 3/4;
 	}
 
-	.side-container {
+	.side-container2 {
 		display: grid;
 		grid-template-columns: 300px 1fr;
 		transition: 1s ease;
