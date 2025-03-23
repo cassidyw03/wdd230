@@ -257,8 +257,8 @@ h3 {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: #ff6600;
     text-align: right;
@@ -267,14 +267,10 @@ footer {
     font-size: larger;
 }
 
-.footer-content {
-    grid-column: 2/3;
-}
-
 .footer-img {
     grid-column: 1/2;
-    text-align: left;
-    padding: 100px;
+    text-align: center;
+    padding-top: 60px;
 }
 
 /* Discover Page Styles */

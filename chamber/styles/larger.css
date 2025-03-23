@@ -130,4 +130,20 @@
 		margin-top: 20px;
 		width: 500px;
 	}
+
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.footer-content {
+		grid-column: 2/3;
+	}
+	
+	.footer-img {
+		grid-column: 1/2;
+		text-align: left;
+		padding: 100px;
+	}
+	
 }
