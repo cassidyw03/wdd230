@@ -26,10 +26,10 @@
     <button type="button" id="menu"></button>
     <nav class="nav">
         <ul class="navigation">
-            <li><a href="/wdd230/chamber/">Home</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Community</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
 
         </ul>
     </nav>
@@ -39,18 +39,27 @@
         <div class="side-container">
             <aside class="sidebar1">
                 <h2>About Windsor</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus cum doloremque corrupti in neque voluptatem magni dolor dolores sunt. Dolorem, ullam temporibus perferendis debitis aliquam illo ad magnam illum.</p>
-                
-                <ul class="color">
-                    <li><a href="">WINDSORRRR</a></li>
-                    <li><a href="">WINDSORRRR</a></li>
-                    <li><a href="">WINDSORRRR</a></li>
-                    <li><a href="">WINDSORRRR</a></li>
-                </ul>
+                <p>The Town of Windsor prides itself on its small-town charm, top-rated programs and events, safety and service. Founded in 1882, Windsor is in the heart of Colorado, with a view of the mountains to the west and the plains to the east.</p>
 
                 <h2>Statistics</h2>
+                <ul>
+                    <li>2024 Population Estimate: Approximately 44,769 residents.</li>
+                    <li>Growth Rate: From April 1, 2020, to July 1, 2023, Windsor added 7,637 new residents, marking a significant growth rate.</li>
+                    <li>Overall Poverty Rate: Approximately 3.62%.</li>
+                    
+                </ul>
 
                 <h2>Calender Events</h2>
+
+                <div class="calendar-container">
+                    <div id="calendar-header">
+                        <button id="prev-month">&lt;</button>
+                        <h3 id="month-year"></h3>
+                        <button id="next-month">&gt;</button>
+                    </div>
+                    <div id="calendar"></div>
+                </div>
+                
 
                 <p><span class="label">Page Visits: </span><span class="visits"></span></p>
 
@@ -84,23 +93,29 @@
 
 
     <footer>
-        <p>
-            Contact Us: (208) 496-1411    
-        </p>
-        <p>
-            Cassidy I.W. Mangum
-        </p>
-        <p>
-            This is ficticious site for a project in WDD 230 at BYU-Idaho
-        </p>
-        <p>&copy; <span id="year"></span></p> 
-        <p><span id="lastModified"></span></p>
+        <picture class="footer-img">
+            <img src="images/WindsorChamber.webp" alt="Windsor Chamber Logo" loading="lazy" width="200px">
+        </picture>
+        <div class="footer-content">
+            <p>
+                Contact Us: (208) 496-1411    
+            </p>
+            <p>
+                Cassidy I.W. Mangum
+            </p>
+            <p>
+                This is ficticious site for a project in WDD 230 at BYU-Idaho
+            </p>
+            <p>&copy; <span id="year"></span></p> 
+            <p><span id="lastModified"></span></p>
+        </div>
     </footer>
 
-    <script src="/wdd230/chamber/scripts/dates.js"></script>
-    <script src="/wdd230/chamber/scripts/hamburger.js"></script>
-    <script src="/wdd230/chamber/scripts/mode.js"></script>
-    <script src="/wdd230/chamber/scripts/windchill.js"></script>
-    <script src="/wdd230/chamber/scripts/visits.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/calendar.js"></script>
 </body>
 </html>

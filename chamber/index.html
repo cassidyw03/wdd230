@@ -27,7 +27,7 @@
         <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="discover.html">Community</a></li>
-            <li><a href="join.html">Contact Us</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
 
         </ul>
@@ -53,19 +53,22 @@
     <main>
         <section id="events">
             <!-- Current Events section -->
-             <h2>Current Events</h2>
+             <h2 class="h2e">Current Events</h2>
              <h3>Harvest Festival</h3>
-             <p>October 13th</p>
+             <p>September 10th</p>
              <h3>Farmers Market</h3>
-             <p>Every Friday May - October!</p>
+             <p>Every other Wednesday in June!</p>
+             <h3>Meet and Greet</h3>
+             <p>Come and find out more about our community and meet others! Every in March at Wednesday at 7pm!</p>
+             <a class="calendar-link" href="discover.html">Find more events on the Calendar!</a>
         </section>
 
-        <section id="weather">
+        <section id="weather" class="weather">
             <!-- Weather Card section -->
-             <h2>Weather</h2>
+             <h2 class="h2w">Weather</h2>
              <p>Temperature: <span id="temperature"></span></p>
              <figure>
-                <img id="weather-icon" src="weather-icon" alt="Weather Icon">
+                <img id="weather-icon" class="weather-icon" src="weather-icon" alt="Weather Icon">
                 <figcaption></figcaption>
             </figure>
              <p>Wind Speed: <span id="windSpeed"></span>mph</p>
@@ -78,25 +81,35 @@
 
         <section id="spotlights">
             <!-- 1-3 company "spotlights" advertisements -->
-             <h2>Spotlights</h2>
-             <h3>Manwearing Appliances</h3>
+             <h2 class="h2s">Spotlights</h2>
+
+             <div id="spot" class="spot-card-container">
+
+             <!-- <h3>Manwearing Appliances</h3>
              <p>This family owned local buisness that has been around since 1995. They specialize in sales, installation, and service in Northern Colorado. Find them on Main street!</p>
              <h3>Lil Flower Shop</h3>
-             <p>The frehsest flowers in Windsor! 5 starts all around from local customers. The staff is known to be the friendliest!</p>
+             <p>The frehsest flowers in Windsor! 5 starts all around from local customers. The staff is known to be the friendliest!</p> -->
+
+
         </section>
     </main>
     <footer>
-        <p>
-            Contact Us: (208) 496-1411    
-        </p>
-        <p>
-            Cassidy I.W. Mangum
-        </p>
-        <p>
-            This is ficticious site for a project in WDD 230 at BYU-Idaho
-        </p>
-        <p>&copy; <span id="year"></span></p> 
-        <p><span id="lastModified"></span></p>
+        <picture class="footer-img">
+            <img src="images/WindsorChamber.webp" alt="Windsor Chamber Logo" loading="lazy" width="200px">
+        </picture>
+        <div class="footer-content">
+            <p>
+                Contact Us: (208) 496-1411    
+            </p>
+            <p>
+                Cassidy I.W. Mangum
+            </p>
+            <p>
+                This is ficticious site for a project in WDD 230 at BYU-Idaho
+            </p>
+            <p>&copy; <span id="year"></span></p> 
+            <p><span id="lastModified"></span></p>
+        </div>
     </footer>
 
     <script src="scripts/dates.js"></script>
@@ -105,6 +118,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/wweather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
 
