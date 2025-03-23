@@ -276,24 +276,27 @@ footer {
 /* Discover Page Styles */
 
 .side-container {
-    height: 80vh;
+    height: auto;
     transition: 1s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sidebar1 {
     background-color: #36475D;
     color: white;
-    width: 500px;
+    width: 250px;
     padding: 20px;
     border-radius: 8px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     display: flex;
-    flex-direction: column; /* Keeps content stacked */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    height: 100%; /* Makes sure it fills the sidebar */
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .sidebar1 ul {
@@ -303,15 +306,16 @@ footer {
 .content {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    gap: 20px;
+    width: 100%;
 }
 
 .content img {
-    width: 400px;
+    width: 100%; 
+    max-width: none;  
+    margin-bottom: 20px;
+    position: relative;
     height: auto;
-    border-radius: 8px;
-    /* this centering isn't working? */
-    justify-self: center;
 }
 
 /* Calendar Sidebar */
@@ -326,7 +330,6 @@ footer {
 }
 
 /* Calendar Header */
-
 #calendar-header {
     display: flex;
     justify-content: space-between;
