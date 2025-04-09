@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 Scoots Website">
+    <meta name="author" content="Cassidy Whitehead">
+    <meta property="og:title" content="Cassidy Whitehead - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/loveland-pass-rick-webb.jpg"/>
+    <meta property="og:url" content="https://cassidyw03.github.io/wdd230/scoots/"/>
+    <title>Scoots</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <button type="button" id="menu"></button>
+    <nav class="nav">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="reserve-header">Make a Reservation</h1>
+
+        <form method="get" action="reservation-made.html" class="myform">
+            <fieldset>
+                <h2>Scoots Reservations</h2>
+
+                <h3>Rental Agreement</h3>
+                <p>PLEASE READ CAREFULLY</p>
+                <ul>
+                    <li>
+                        A $50 security deposit is required to confirm reservations.
+                    </li>
+                    <li>
+                        A valid drivers license is required in hand at the time of rental.
+                    </li>
+                    <li>
+                        No one under the age of 12 years of age are allowed to ride on the scooters.
+                    </li>
+                    <li>
+                        Fuel charge is not included.
+                    </li>
+                    <li>
+                        Unlimited mileage.
+                    </li>
+                    <li>
+                        Liability insurance is included.
+                    </li>
+                    <li>
+                        Damage insurance is available for purchase.
+                    </li>
+                    <li>
+                        Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+                    </li>
+                    <li>
+                        Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
+                    </li>
+                    <li>
+                        Rentals may be returned to either physical location.
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <label>First Name*<input type="text" id="fname" name="fname" placeholder="Samantha" required></label>
+
+                <label>Last Name*<input type="text" id="lname" name="lname" placeholder="Johnson" required></label>
+
+                <label>Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+
+                <label>Email*<input type="email" id="email" name="email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="A valid email address" required></label>
+
+                <label>Home State or Country*<input type="text" id="location" name="location" required></label>
+
+                <label>Cruise Line (if applicable)<input type="text" id="cruise" name="cruise"></label>
+
+
+                <!-- <label>Questions, comments, etc.</label>
+                <textarea name="area" id="area" rows="4" cols="50"></textarea> -->
+
+                
+            </fieldset>
+
+            <fieldset>
+                <label>Date*<input type="date" id="rental-date" name="rental-date" required></label>
+
+                <label>Period*<select name="period" id="period" required>
+                    <option value="">Select</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="full-day">Full Day</option>
+                </select></label>
+
+                <label>Rental Type*<select name="rental-type" id="rental-type" required>
+                    <option value="">Select</option>
+                <option value="metropolitan">Honda Metropolitan (49cc) – 1 person</option>
+                <option value="dio">Honda Dio (110cc) – 2 person</option>
+                <option value="pcx150">Honda PCX150 (149cc) – 2 person</option>
+                <option value="pioneer1000">Honda Pioneer 1000 – 4 person</option>
+                <option value="jeep-4door">Jeep Wrangler – 4 door manual with A/C – 5 person</option>
+                <option value="jeep-2door">Jeep Wrangler – 2 door – open air – manual – 4 person</option>
+                </select></label>
+
+                <label>Special Accommodations / Comments / Concerns</label>
+                <textarea name="comments" id="comments" placeholder="Let us know about any special needs, drop-off requests, etc."></textarea>
+
+                <button id="submit" type="submit">Make My Reservation!</button>
+            </fieldset>
+
+        </form>
+
+
+        <form method="get" action="thanks-feedback.html" class="myotherform">
+            <fieldset>
+                <h2>Rate our Services</h2>
+                <label for="r">We appreciate our customer's feedback! Please give us a star rating so we can know how well we addressed your expectations.</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues"> 
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+
+                <button id="submit" type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
+
+
+
+

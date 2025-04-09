@@ -63,6 +63,17 @@ body {
 
 .temp-max-banner {
     text-align: center;
+    padding: 2rem;
+    background-color:#dfffc8;
+}
+
+.close-banner {
+    font-size: 2rem;
+}
+
+.close-banner:hover {
+    cursor: pointer;
+    color: #f32133;
 }
 
 /* Hero Section*/
@@ -88,7 +99,7 @@ body {
 .hero-image img {
     /* width: 90%;
     height: 90%; */
-    /* border-radius: 10px; */
+    border-radius: 8px;
     width: 100%;
     height: auto;
     max-width: 600px;
@@ -230,6 +241,37 @@ tr:nth-child(even) {
     padding: 5px;
 }
 
+/* Gallery Styling */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    padding: 10px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 180px;
+    box-sizing: border-box;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
 /* Contact Us Page Styling */
 
 .map-container {
@@ -311,7 +353,11 @@ form {
 .myform input[type="text"],
 .myform input[type="tel"],
 .myform input[type="email"],
-.myform textarea
+.myform input[type="date"],
+.myform textarea,
+.myform #period,
+.myform #rental-type,
+.myform #comments
 {
     background-color: #eee;
     display: block;
@@ -401,8 +447,24 @@ form {
     border-right: solid 8px red;
 }
 
+.myform #rental-type, .myform #period {
+    border-right: solid 8px red;
+}
+
 .myform input:required:valid {
     border-right: solid 8px green;
+}
+
+.myform #rental-type:valid, .myform #period:valid{
+    border-right: solid 8px green;
+}
+
+/* Reservation Page Styling */
+
+.reserve-header {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
 }
 
 
