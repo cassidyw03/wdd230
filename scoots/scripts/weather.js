@@ -79,7 +79,7 @@ const closeBanner = document.querySelector("#close-banner");
 const tempMaxBanner = document.querySelector(".temp-max-banner");
 
 closeBanner.addEventListener("click", function() {
-    tempMaxBanner.style.display = "none";  // Hide the banner
+    tempMaxBanner.style.display = "none";  
 });
 
 apiFetch();

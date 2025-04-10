@@ -404,10 +404,15 @@ div.gallery {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
   }
 
 .map-box {
     max-width: 67.5em;
+    border: 2px solid #16555c;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 1rem auto;
 }
   
 .map {
