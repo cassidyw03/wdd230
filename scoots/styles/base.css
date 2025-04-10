@@ -67,7 +67,7 @@ body {
     text-align: center;
     padding: 2rem;
     margin: 2rem 0rem;
-    background-color: blanchedalmond;
+    background-color: rgb(254, 252, 196);
 }
 
 .close-banner {
@@ -128,7 +128,9 @@ body {
 .action-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff6600;
+    /* This is the color is wanted it to be *sigh,* but CSS Overview said it was not contrasting enough */
+    /* background: #ff6600; */
+    background-color: rgb(156, 68, 0);
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -176,7 +178,8 @@ ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 1); */
+    background-color: #f32133;;
     color: white;
     border: none;
     padding: 10px;
@@ -415,7 +418,14 @@ div.gallery {
 
 .loca {
     text-align: center;
+    background-color: rgb(156, 68, 0);
+    color: white;
+    border-radius: 8px;
+    width: 300px;
+    padding: 1rem;
+    margin: 5rem auto 0;
 }
+
 
 .contact-us {
     text-align: center;
