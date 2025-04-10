@@ -11,12 +11,18 @@
     <meta property="og:url" content="https://cassidyw03.github.io/wdd230/scoots/"/>
     <title>Scoots</title>
     <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
     <button type="button" id="menu"></button>
     <nav class="nav">
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -24,15 +30,45 @@
     </nav>
 
     <main>
-        <p>Thank you for your feedback of our services!</p>
-        <p>.....</p>
-        <p>Come back soon!</p>
+        <h1 class="contact-us">Contact Us</h1>
+        <ul class="contact-info">
+            <li><strong>Phone Number:</strong> +52 1 55 1234 5678</li>
+            <li><strong>Email:</strong> scootsmotors@gmail.com</li>
+            <li><strong>Office Hours:</strong> Monday-Saturday, 8:00am-8:00pm</li>
+        </ul>
+
+        <form method="get" action="thanks.html" class="myform">
+            <fieldset>
+                <h2>Inquires Below</h2>
+
+                <label>First Name*<input type="text" id="fname" name="fname" placeholder="Samantha" required></label>
+
+                <label>Last Name*<input type="text" id="lname" name="lname" placeholder="Johnson" required></label>
+
+                <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+
+                <label>Email*<input type="email" id="email" name="email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="A valid email address" required></label>
+
+                <label>Questions, comments, etc.</label>
+                <textarea name="area" id="area" rows="4" cols="50"></textarea>
+
+                <button id="submit" type="submit">Contact Us Now!</button>
+
+            </fieldset>
+        </form>
+
+        <div class="recorded">
+            <p>Your response has been recorded.</p>
+            <p>✅</p>
+            <p>Thank you!</p>
+            <p>. . . . . . . . . . . . .</p>
+        </div>
 
 
-        <h2 class="loca">Find Our Locations!</h1>
+        <h2 class="loca">Find Our Locations!</h2>
             <div class="map-container">
                 <div class="map-box">
-                    <h2>Location 1</h2>
+                    <h3>Location 1</h3>
                     <p>Address: Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</p>
                     <p>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel </p>
                     <iframe title="Google Map 1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239215.09277385625!2d-87.13919235377008!3d20.476040758282227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sus!4v1743726315838!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
@@ -40,13 +76,38 @@
     
     
                 <div class="map-box">
-                    <h2>Location 2</h2>
+                    <h3>Location 2</h3>
                     <p>Address: Costera Sur, 77600 Cozumel, Q.R., Mexico</p>
                     <p>Near the Terminal Puerta Maya further south along the coast of Cozumel</p>
                     <iframe title="Google Map 2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14950.93569930125!2d-86.98498031050005!3d20.476118746612485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1743726382835!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
                 </div>
             </div>
     </main>
+
+    <footer>
+        <img src="images/favicon.ico" alt="Scoots Motors" class="footer-favicon">
+        
+        <p><a href="attributions.html">. . . . . . . . . . . Attributions . . . . . . . . . . . </a></p>
+    
+        <ul class="contact-info">
+            <li><strong>Phone Number:</strong> +52 1 55 1234 5678</li>
+            <li><strong>Email:</strong> <a href="mailto:scootsmotors@gmail.com">scootsmotors@gmail.com</a></li>
+            <li><strong>Office Hours:</strong> Monday-Saturday, 8:00am-8:00pm</li>
+        </ul>
+    
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebookicon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instaicon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twittericon.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
 
       
 

@@ -11,6 +11,12 @@
     <meta property="og:url" content="https://cassidyw03.github.io/wdd230/scoots/"/>
     <title>Scoots</title>
     <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
     <button type="button" id="menu"></button>
@@ -27,7 +33,7 @@
         <span class="close-banner" id="close-banner">✕</span>
         <h3>Today's Highest Temperature:</h3>
         <span id="max-temp"></span>
-        <p>Stay Safe!</p>
+        <p>Stay Safe and Enjoy the Weather!</p>
     </div>
 
     <section class="hero-section">
@@ -49,55 +55,79 @@
         </div>
     </section>
 
-    <div class="slider-container">
-        <button id="prevb" class="arrow left">&#9665;</button>
-        <div class="slider">
-            <div class="slide">
-                <h2>Honda Motor Scooters</h2>
-                <ul>
-                    <li>Honda Metropolitan (49cc) - 1 person</li>
-                    <li>Honda Dio (110cc) - 2 person</li>
-                    <li>Honda PCX150 (149cc) - 2 person</li>
-                </ul>
+    <main>
+        <div class="slider-container">
+            <button id="prevb" class="arrow left">&#9665;</button>
+            <div class="slider">
+                <div class="slide">
+                    <h2>Honda Motor Scooters</h2>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h2>Side-by-Side ATVs</h2>
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h2>Jeeps</h2>
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                    </ul>
+                </div>
             </div>
-            <div class="slide">
-                <h2>Side-by-Side ATVs</h2>
-                <ul>
-                    <li>Honda Pioneer 1000 - 4 person</li>
-                </ul>
-            </div>
-            <div class="slide">
-                <h2>Jeeps</h2>
-                <ul>
-                    <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
-                    <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-                </ul>
-            </div>
+            <button id="nextb" class="arrow right">&#9655;</button>
         </div>
-        <button id="nextb" class="arrow right">&#9655;</button>
-    </div>
 
-    <section id="weather" class="weather">
-         <h2>Weather</h2>
-         <p>Current Temperature: <span id="temperature"></span></p>
-         <p>Current Humidity: </p>
-         <p>Tomorrow's Forecast at 3:00pm:</p>
-         <figure>
-            <img id="weather-icon" class="weather-icon" src="weather-icon" alt="Weather Icon">
-            <figcaption></figcaption>
-        </figure>
-         <p>Wind Speed: <span id="windSpeed"></span>mph</p>
-         <p>Wind Chill: Feels like <span id="windChill">N/A</span></p>
+        <section id="weather" class="weather">
+            <h2>Current Weather</h2>
+          
+            <!-- Current Weather Card -->
+            <div class="weather-card weather-box">
+              <p class="temp"><span id="temperature"></span></p>
+              <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+              <figcaption id="current-desc"></figcaption>
+              <p>Humidity: <span id="humidity"></span></p>
+            </div>
+          
+            <!-- Forecast Card -->
+            <h3>Tomorrow's Forecast at 3:00pm</h3>
+            <div id="forecast" class="forecast-card"></div>
+        </section>
+          
+    </main>
 
-
-         <h2>3 Day Forcast</h2>
-         <div id="forecast"></div>
-    </section>
+    <footer>
+        <img src="images/favicon.ico" alt="Scoots Motors" class="footer-favicon">
+        
+        <p><a href="attributions.html">. . . . . . . . . . . Attributions . . . . . . . . . . . </a></p>
+    
+        <ul class="contact-info">
+            <li><strong>Phone Number:</strong> +52 1 55 1234 5678</li>
+            <li><strong>Email:</strong> <a href="mailto:scootsmotors@gmail.com">scootsmotors@gmail.com</a></li>
+            <li><strong>Office Hours:</strong> Monday-Saturday, 8:00am-8:00pm</li>
+        </ul>
+    
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebookicon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instaicon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twittericon.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
     
 
-    <main>
-
-    </main>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/weather.js"></script>
@@ -106,10 +136,3 @@
 </html>
 
 
-
-<!-- Make a reservation Now! -->
- <!-- Nav and contact info -->
-  <!-- Summary information about all types of rentals -->
-  <!-- social media links -->
-   <!-- weather information -->
-    <!-- closeable message for max heat -->

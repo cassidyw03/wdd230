@@ -7,6 +7,7 @@
 
 body {
     font-family: "EB Garamond", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
 }
 
 /* Navigation Styling */
@@ -64,7 +65,8 @@ body {
 .temp-max-banner {
     text-align: center;
     padding: 2rem;
-    background-color:#dfffc8;
+    margin: 2rem 0rem;
+    background-color: blanchedalmond;
 }
 
 .close-banner {
@@ -113,7 +115,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background-color: blanchedalmond;
+    background-color: rgb(204, 234, 243);
     border-radius: 10px;
 }
 
@@ -192,12 +194,101 @@ ul {
     background: rgba(0, 0, 0, 0.7);
 }
 
+/* Weather Content Styling */
+
+.weather-box {
+    /* background-color: rgb(81, 81, 81); */
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 250px;
+    margin: 1rem auto;
+  }
+  
+  .weather-box .temp {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem 0;
+    background-color: rgb(180, 231, 246);
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    font-style: italic;
+    color: #232323;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer Styling */
+
+footer {
+    /* background-color: rgb(204, 234, 243); */
+    background-image: linear-gradient(to bottom, white, rgb(204, 234, 243));
+    padding: 1rem;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+footer .footer-favicon {
+    width: 40px;
+    height: 40px;
+}
+
+footer p, footer a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: rgb(38, 38, 38) ;
+}
+
+footer .contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+footer .contact-info li {
+    margin-bottom: 0.5rem;
+}
+
+/* Social Media Icons */
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.2);
+}
+
 /* Rental page Styling */
 
 .rental-pricing-header {
     font-size: 50px;
     text-align: center;
-    /* background-color: #4CAF50; */
+    padding: 20px;
+    background-color: rgb(204, 234, 243);
 }
 
 /* Tables Styling */
@@ -299,9 +390,13 @@ div.gallery {
     text-align: center;
     font-size: 50px;
     padding: 20px;
+    background-color: rgb(204, 234, 243);
+}
+.contact-info {
+    font-size: larger;
 }
 
-/* Contact Us Form Styling */
+/* Contact Us and Reservations Form Styling */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -313,12 +408,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     width: 100%;
     margin: 0 auto;
 }
-
-/* form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 form {
     padding: 10px;
@@ -439,15 +528,10 @@ form {
   }
   
 #submit:hover {
-    background-color: #3b853e; /* Slightly darker green on hover */
+    background-color: #3b853e; 
 }
   
-
 .myform input:required {
-    border-right: solid 8px red;
-}
-
-.myform #rental-type, .myform #period {
     border-right: solid 8px red;
 }
 
@@ -455,8 +539,16 @@ form {
     border-right: solid 8px green;
 }
 
+/* Form Stlying Specific to Reservations Page */
+.myform #rental-type, .myform #period {
+    border-right: solid 8px red;
+}
 .myform #rental-type:valid, .myform #period:valid{
     border-right: solid 8px green;
+}
+
+.myform #comments {
+    width: 100%;
 }
 
 /* Reservation Page Styling */
@@ -465,12 +557,21 @@ form {
     text-align: center;
     font-size: 50px;
     padding: 20px;
+    background-color: rgb(204, 234, 243);
+}
+
+/* Thanks.html Styling */
+.recorded {
+    font-size: x-large;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px;
 }
 
 
 /* Media Query for larger Screens */
-
-@media (min-width: 67.5em) {
+/* was 67.5em */
+@media (min-width: 37.5em) {
     #menu {
         display: none;
     }
@@ -545,9 +646,6 @@ form {
         margin: 2rem auto;
     }
     }
-
-
-
 
 /* @media (min-width: 47.5em) {
     .slider-container {
