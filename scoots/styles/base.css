@@ -8,6 +8,7 @@
 body {
     font-family: "EB Garamond", Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
+    padding: 0 1rem;
 }
 
 /* Navigation Styling */
@@ -192,6 +193,36 @@ ul {
 
 .arrow:hover {
     background: rgba(0, 0, 0, 0.7);
+}
+
+.dot1 {
+    padding-top: 20px;
+}
+
+.dot2 {
+    padding-top: 70px;
+}
+
+.dot3 {
+    padding-top: 40px;
+}
+
+/* Cozumel Images Styling */
+.coz-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coz-images img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.beaut-area {
+    text-align: center;
+    font-size: 30px;
 }
 
 /* Weather Content Styling */
@@ -617,6 +648,17 @@ form {
 
     .slide {
         font-size: 24px;
+    }
+
+    .coz-display {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .coz-images img {
+        /* width: 400px; */
+        height: 200px;
     }
 
     /* Google Map */
