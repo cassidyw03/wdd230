@@ -339,20 +339,20 @@ th, td {
     text-align: left;
 }
 th {
-    background-color: #4CAF50;
+    background-color: #29732c;
     color: white;
 }
 
 .maxp {
-    background-color: #f32133;
+    background-color: #b71c29;
 }
 
 .reservation {
-    background-color: #2d8a94;
+    background-color: #16555c;
 }
 
 .walk-in {
-    background-color: #de8512;
+    background-color: #9e4200;
 }
 
 tr:nth-child(even) {
@@ -555,7 +555,8 @@ form {
   
 
 #submit {
-    background-color: #4CAF50; 
+    /* background-color: #4CAF50;  */
+    background-color: #3b853e;
     color: white;              
     border: none;              
     padding: 12px 24px;
